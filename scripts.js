@@ -5,8 +5,14 @@ var ctx2 = canvas2.getContext('2d');
 var canvas3 = document.getElementById('birdspace3');
 var ctx3 = canvas3.getContext('2d');
 
+canvas.width = canvas.height *
+    (canvas.clientWidth / canvas.clientHeight);
+canvas2.width = canvas2.height *
+    (canvas2.clientWidth / canvas2.clientHeight);
+canvas3.width = canvas3.height *
+    (canvas3.clientWidth / canvas3.clientHeight);
+
 ctx.font = "24px Arial";
-//ctx.fillStyle = "red";
 ctx.textAlign = "center";
 ctx2.fillText("Loading...", canvas.width * 0.5, canvas.height * 0.5);
 
