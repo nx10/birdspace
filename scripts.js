@@ -45,7 +45,7 @@ function draw() {
 
         ctx2.drawImage(imgChris, symbols[i][0] * coordgridsize, symbols[i][1] * coordgridsize, coordgridsize, coordgridsize, xToCoord(symbolpoints[i][0]) - symbolsize / 2, yToCoord(symbolpoints[i][1]) - symbolsize / 2, symbolsize, symbolsize);
 
-        if (Math.abs(symbolpoints[i][0] - neckRange) < 0.11 && Math.abs(symbolpoints[i][1] - legRange - 0.02) < 0.11) {
+        if (Math.abs(symbolpoints[i][0] - neckRange) < 0.11 && Math.abs(symbolpoints[i][1] - legRange - 0.08) < 0.11) {
             ctx3.drawImage(imgChris, symbols[i][0] * coordgridsize, symbols[i][1] * coordgridsize, coordgridsize, coordgridsize, 0, 0, canvas3.width, canvas3.height);
         }
 
