@@ -93,31 +93,31 @@ function drawBird(x, y, scalex, scaley, neckscale, legscale) {
     scalex = 0.75 * scalex;
 
     neckscale = 0.0 + neckscale * 3.0;
-    legscale = 0.2 + legscale * 1.8;
+    legscale = 0.2 + legscale * 1.2;
 
     let drawx = x - (100 * scalex);
     let draww = 200 * scalex;
 
-    let bodyy = y - 30 * scaley;
-    let bodyh = 61 * scaley;
+    let bodyy = y - 52 * scaley; // 30
+    let bodyh = 75 * scaley; // 61
 
     let legy = bodyy + bodyh;
-    let legh = (30 * legscale) * scaley;
+    let legh = (63 * legscale) * scaley; // 30
 
     let feety = legy + legh;
-    let feeth = 43 * scaley;
+    let feeth = 14 * scaley;
 
-    let neckh = (16 * neckscale) * scaley;
+    let neckh = (14 * neckscale) * scaley;
     let necky = bodyy - neckh;
 
-    let headh = 50 * scaley;
+    let headh = 34 * scaley;
     let heady = necky - headh;
 
-    ctx.drawImage(img, 0, 0, 200, 50, drawx, heady, draww, headh); // head
-    ctx.drawImage(img, 0, 50, 200, 16, drawx, necky, draww, neckh); // neck
-    ctx.drawImage(img, 0, 66, 200, 61, drawx, bodyy, draww, bodyh); // body
-    ctx.drawImage(img, 0, 127, 200, 30, drawx, legy, draww, legh); // legs
-    ctx.drawImage(img, 0, 157, 200, 43, drawx, feety, draww, feeth); // feet
+    ctx.drawImage(img, 0, 0, 200, 34, drawx, heady, draww, headh); // head
+    ctx.drawImage(img, 0, 34, 200, 14, drawx, necky, draww, neckh); // neck
+    ctx.drawImage(img, 0, 48, 200, 75, drawx, bodyy, draww, bodyh); // body
+    ctx.drawImage(img, 0, 123, 200, 63, drawx, legy, draww, legh); // legs
+    ctx.drawImage(img, 0, 186, 200, 14, drawx, feety, draww, feeth); // feet
 }
 
 var RESLOAD = 0;
